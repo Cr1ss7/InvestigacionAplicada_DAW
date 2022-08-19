@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Investigacion Aplicada</title>
+</head>
+<body>
+    <header>    
+        <nav>
+            <div class="imgTit">
+                <img src="css/img/jsLogo.png" alt="JS LOGO">
+            </div>
+            <ul class="links">
+                <li class="ancla"><a href="#buenas-practicas">Buenas Practicas</a></li>
+                <li class="ancla"><a href="#linting">Linting</a></li>
+                <li class="ancla"><a href="#funciones-flecha">Funciones Flecha</a></li>
+                <li class="ancla"><a href="#operador-spread">Operador Spread</a></li>
+            </ul>
+        </nav>
+        <section class="Tit">
+            <h1>Investigacion Aplicada</h1>
+        </section>
+    </header>
+   <main>
+        <a id="buenas-practicas"></a></br></br>
+        <section class="one">  
+            <h1>Buenas Practicas de edicion de codigo en JS</h1>
+            <article>   
+                <p>Cuando hablamos de buenas prácticas en programación, estamos tomando en cuenta metodologías, técnicas y principios que se tiene que implementar a la hora de crear un software, esto es para que se vuelva de fácil entendimiento, mejore su velocidad y sea más seguro de mantener y desplegar. A Continuación habláremos de algunas buenas Prácticas a la hora de crear código JS. </p>
+                <ol class="list">
+                    <li class="contList1"><p>1. Utiliza siempre Punto y coma. Si no colocas punto y coma, normalmente, los navegadores no tendrán problemas con estas omisiones, pero, se trata de una muy mala práctica que puede ser creadora de problemas difíciles de encontrar en códigos de gran tamaño. </p><img src="css/img/practica1.png" alt="Pratica1"></li>
+                    <li class="contList1"><p>2. Comenta tu código. Al inicio puede parecer al innecesario, pero  necesitas comentar tu código de la mejor manera posible, por la sencilla razón es que meses después de la creación de algún bloque del código no recuerdes como fue tu línea de pensamiento en ese momento, o si alguna otra persona necesita entender lo que escribiste en ese bloque de código, por eso comenta la secciones importantes del código que estés creando. </p><img src="css/img/practica2.png" alt="Practica2"></li>
+                    <li class="contList1"><p>3. Omite la palabra var.  Cuando quieras crear muchas variables, recuerda que las puedes sustituir por una “,”, esto ayuda a que el código sea un más legible y limpio. </p><img src="css/img/practica3.png" alt="Practica3"></li>
+                    <li class="contList1"><p>4. Utiliza varios parámetros.  Utiliza varios parámetros de entrada, ya que estoy ayuda a un mejor entendimiento del código, además ayuda al rendimiento de la aplicación, porque ya no necesita crear parámetros de objetos. </p><img src="css/img/practica4.png" alt="Practica4"></li>
+                    <li class="contList1"><p>5. Utiliza las funciones de flechas.  Es una forma de concisa de escribir funciones en JavaScript  y es una forma de mantener tu código limpio, también resuelve problemas a la hora de acceder a las devoluciones de llamada de las propiedades. </p><img src="css/img/practica5.png" alt="Practica5"></li>
+                    <li class="contList1"><p>6. Declarar variables afuera de For. Cuando ejecutes sentencias del tipo for no es necesario que se trabaje de más,  ya que cada vez que se repite la iteración hará todos los procesos dentro de ella. Ejemplo de buena práctica con for. </p><img src="css/img/practica6.png" alt="Practica6"></li>
+                    <li class="contList1"><p>7. Operador spread. El operador (…) es capaz de expandir arrays con una sola línea de código, este operador se utiliza al querer combinar parámetros. Esto nos ayuda también a tener un código limpio y fácil de entender. </p><img src="css/img/practica7.png" alt="Practica7"></li>
+                    <li class="contList1"><p>8. Colocar los scripts en la parte inferior del html.  El objetivo para una página es que cargue lo más rápidamente posible, por eso tenemos que facilitar esto para el navegador, al colocar los archivos que solo aportan funcionalidad en al página se pueden colocar en la parte inferior, antes del cierro del cuerpo del archivo. </p><img src="css/img/practica8.jpg" alt="Practica8"></li>
+                    <li class="contList1"><p>9. No usar la vía corta.  Técnicamente las llaves se pueden omitir en la mayoría de los navegadores. Solo se recomienda no utilizarlas en líneas  simples. Aun que es debatible su utilización o no en este caso. </p><img src="css/img/practica9.png" alt="Practica9"></li>
+                </ol>
+            </article>
+        </section>
+        <a id="linting"></a></br></br>
+        <section class="two">   
+            <h1>¿Que es Linting y para que se utiliza en JS?</h1>
+            <article>   
+                <p>Al momento de redactar código el surgimiento de errores es inevitable, algunos de estos errores causar problemas en la interfaz de la aplicación incomodando al usuario y otros afectan al funcionamiento del mismo. Existe un cierto grupo de errores que pueden identificarse y corregirse antes de la ejecución del código, entre estos se encuentran:</p>
+                <ul class="list2">
+                    <li class="check">Errores de sintaxis</li>
+                    <li class="check">Código poco intuitivo o difícil de mantener.</li>
+                    <li class="check">Uso de “malas prácticas”.</li>
+                    <li class="check">Uso de código inconsistente.</li>
+                </ul>
+                <p>El grupo de errores mencionados con anterioridad son mas comunes a diferencia de otros más graves debido a que son los menos evidentes.</p>
+                <p>El termino linting se designa a una herramienta que “revisa” el código en busca de fallos o errores que afecten al mismo. Algunos “linteres” pueden brindar sugerencias de como solucionar el error o incluso como esta herramienta puede solucionarlos.</p>
+                <p>Las herramientas de linting pertenecen a un grupo de programas conocidos como herramientas de análisis estático un proceso de revisión de un programa sin ejecutar dicho programa, por lo general la revisión se realiza sobre el código fuente o alguna clase de código objeto.</p>
+                <p>Un ejemplo de esta herramienta es ESLint.</p>
+                <div class="eslint">
+                    <h2 class="tit2">¿Qué es ESLint?</h2>
+                    <p>ESLint es una herramienta de código abierto enfocada en el proceso de "lintig" para JavaScript. ESLint es la herramienta predominante para la tarea de "limpiar" código JavaScript tanto en el servidor (node.js) como en el navegador.</p>
+                    <p>Dado que javascript es un lenguaje dinámico y de tipado débil, es especialmente fácil caer en errores humanos a la hora de escribir código. ESLint utiliza un sistema de reglas que permiten definir qué es y que no es posible dentro del código. ESLint está escrito en Nodejs y es posible instalarlo desde npm.</p>
+                </div>
+            </article>
+        </section>
+        <a id="funciones-flecha"></a></br></br>
+        <section class="one">
+            <h1>Funciones Flecha</h1>
+            <article>
+            <p>Estas funciones mas compactas a comparación de las funciones tradicionales ya que estas permiten escribir método más concisos o simplificados, aprovechando las características de retorno implícito y el no uso de paréntesis, sin embargo, su uso es mas limitado y no se pueden utilizar en cualquier situación a comparación de las funciones tradicionales, no cuentan con su propio enlace a this o super y no debe usarse como método, a comparación de las funciones tradicionales estas no cuentan con un argumento o palabra clave y estas generalmente se basan en establecer un ámbito o enlace, estas no pueden utilizarse como método constructor.</p>
+            <p>Estas al ser una sintaxis abreviada, nos ahorramos mas tiempo al momento de desarrollo el código, además de simplificar el ámbito de la función, es una de las características más utilizadas de ES6 (se encarga de regir como debe ser interpretado y funcionar el lenguaje JavaScript).</p>
+            <h2 class="tit2">Sintaxis básica:</h2>
+            <img src="css/img/sintaxisFlecha.png" alt="sintaxisflecha" id="basica">
+            <h2 class="tit2">Tipos de sintaxis:</h2>
+            <div class="tipoSin">  
+                <p>Al crear una función flecha que recibe un solo parámetro no es necesario escribir lo paréntesis, tampoco es necesario escribir las llaves, esto se puede cuando la función es una sola línea y devuelve un valor.</p>
+                <img src="css/img/sintaxis1.png" alt="sintaxis1">
+            </div>
+            <div class="tipoSin">  
+                <p>Cuando la función tenga más de un parámetro es necesario envolver el nombre de estos dos entre paréntesis.</p>
+                <img src="css/img/sintaxis2.png" alt="sintaxis2">
+            </div>
+            <div class="tipoSin">  
+                <p>Cuando la función no reciba parámetros son es necesarios los paréntesis.</p>
+                <img src="css/img/sintaxis3.png" alt="sintaxis3">
+            </div>
+            <div class="ejemplo">
+                <a href="ejemplos/flecha.html">Presiones aqui para ir al ejemplo</a>
+            </div>
+            </article>
+        </section>
+        <a id="operador-spread"></a></br>
+        <section class="two">
+            <h1>Operador Spread</h1>
+            <article>
+            <p>El operador spread o también conocido como (el tres puntos de js), este operador llega a obtener una funcionalidad la cual es la de simplificar la recogida de valores en una estructura de datos, este operador es compatible con la estructura de arreglos la cual permite descomponerlos, copiarlos y concatenarlos, su actualización mas reciente son los objetos.</p>
+            <h2 class="tit2">Sintaxis</h2>
+            <div class="sinSpread">
+                <p>Para llamadas de funciones: </p>
+                <img src="css/img/spread1.png" alt="Spread1">
+            </div>
+            <div class="sinSpread">
+                <p>Para arreglos literales o también para cadenas de caracteres:</p>
+                <img src="css/img/spread2.png" alt="Spread2">
+            </div>
+            <div class="sinSpread">
+                <p>Para objetos literales:</p>
+                <img src="css/img/spread3.png" alt="Spread3">
+            </div>
+            <div class="ejemplo">
+                <a href="ejemplos/spread.html">Presiones aqui para ir al ejemplo</a>
+            </div>
+            </article>
+        </section>
+   </main> 
+   <footer>
+        <div class="foot1">
+        <p>Desarrollo de software</p> 
+        <img src="data:image/png;base64,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" alt="cdb">
+        </div>  
+        <div class="alumnos">
+        <p>Cristian Omar Pineda Campos</p> 
+        <p>Victor Eduardo Reyna Montecino</p> 
+        <p>Angel Isaias Rodriguez Pimentel</p> 
+        <p>Rodrigo Wilfredo Sosa Castellanos</p> 
+        <p>Fernando Josue Torres Lara</p> 
+        </div>
+   </footer>
+</body>
+</html>
